@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class ComponentCard extends StatelessWidget {
-  final Widget? child;
-  const ComponentCard({
+class CardComponent extends StatelessWidget {
+  final List<Widget>? child;
+  const CardComponent({
     this.child,
     Key? key,
   }) : super(key: key);
@@ -22,7 +22,14 @@ class ComponentCard extends StatelessWidget {
       child: Container(
         height: 178,
         width: double.infinity,
-        child: child,
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: child!,
+          ),
+        ),
       ),
     );
   }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nu_copy/components/body_info.dart';
-import 'package:nu_copy/components/bottom_navigation_info.dart';
+import 'package:nu_copy/components/navigation_component.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -44,7 +44,7 @@ class HomePage extends StatelessWidget {
         toolbarHeight: 94,
       ),
       body: const BodyInfo(),
-      bottomNavigationBar: const BottomInfo(),
+      bottomNavigationBar: const NavigationComponent(),
     );
   }
 }
